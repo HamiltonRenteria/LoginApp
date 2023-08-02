@@ -6,6 +6,7 @@
         IUserRepository User { get; }
 
         void SaveChanges();
+
         Task SaveChangesAsync();
     }
 }

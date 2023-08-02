@@ -14,7 +14,6 @@ namespace Infrastructure.Persistence.Repository
             User = new UserRepository(_persistenceContext);
         }
 
-
         public void Dispose()
         {
             _persistenceContext.Dispose();
