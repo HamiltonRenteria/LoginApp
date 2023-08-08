@@ -7,12 +7,10 @@ namespace Infrastructure.Persistence.Repository
     public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
     {
         private readonly PersistenceContext _persistenceContext;
-        //private readonly DbSet<T> _entity;
 
         public GenericRepository(PersistenceContext persistenceContext)
         {
             _persistenceContext = persistenceContext;
-            //_entity = _persistenceContext.Set<T>();
         }
 
         public async Task<bool> RegisterAsync(T entity)
